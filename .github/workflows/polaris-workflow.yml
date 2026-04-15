@@ -40,7 +40,7 @@ jobs:
           ### GITHUB TOKEN
           github_token: ${{ secrets.GITHUB_TOKEN }}  # Required when PR comments or sarif reports enabled
           polaris_prComment_enabled: true
-
+          polaris_fixPR_filter_severities: CRITICAL,HIGH,MEDIUM,LOW
 
           ### SCAN CONFIGURATION: Uncomment below to enable
           # polaris_waitForScan: true # Wait for scan completion before proceeding
